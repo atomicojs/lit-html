@@ -3,6 +3,9 @@
     "description": "lit-html render for Atomico webcomponents",
     "version": "1.0.0",
     "type": "module",
+    "publishConfig": {
+        "access": "public"
+    },
     "scripts": {
         "start": "vite",
         "build": "vite build",
