@@ -28,6 +28,7 @@ import { c } from "atomico";
 import { html } from "@atomico/lit-html";
 
 function component({ message }: Props<typeof component>) {
+    html.shadowDom = true;
     return html`<h1>Welcome to ${message}!</h1>`;
 }
 
