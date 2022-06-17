@@ -1,9 +1,6 @@
 {
     "name": "@atomico/lit-html",
     "description": "lit-html render for Atomico webcomponents",
-    "workspaces": [
-        "src/*"
-    ],
     "version": "1.0.0",
     "type": "module",
     "scripts": {
@@ -20,7 +17,7 @@
         "lit-html": "latest"
     },
     "devDependencies": {
-        "@atomico/exports": "latest",
+        "@atomico/exports": "^0.33.5",
         "@atomico/tsconfig": "1.0.0",
         "@atomico/vite": "latest",
         "c8": "^7.11.3",
