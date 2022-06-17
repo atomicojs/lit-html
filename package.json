@@ -4,7 +4,7 @@
     "workspaces": [
         "src/*"
     ],
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "module",
     "scripts": {
         "start": "vite",
@@ -12,7 +12,7 @@
         "test": "vitest",
         "coverage": "vitest run --coverage",
         "exports": "exports src/lit-html.ts --exports --types --publish",
-        "prepublishOnly": "npm run coverage",
+        "prepublishOnly": "npm run coverage && npm run exports",
         "create": "scaff templates/component src"
     },
     "dependencies": {
