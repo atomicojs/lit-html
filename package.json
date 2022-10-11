@@ -19,6 +19,7 @@
         "lit-html": "*"
     },
     "peerDependencies": {
+        "atomico": "*",
         "lit-html": "*"
     },
     "devDependencies": {
