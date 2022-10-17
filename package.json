@@ -11,12 +11,8 @@
         "build": "vite build",
         "test": "vitest",
         "coverage": "vitest run --coverage",
-        "exports": "exports src/lit-html.ts --exports --types",
+        "exports": "exports src/**/*.ts --exports --types",
         "prepublishOnly": "npm run coverage && npm run exports"
-    },
-    "dependencies": {
-        "atomico": "^1.65.0",
-        "lit-html": "*"
     },
     "peerDependencies": {
         "atomico": "*",
