@@ -9,19 +9,21 @@
     "scripts": {
         "start": "vite",
         "build": "vite build",
-        "test": "vitest",
-        "coverage": "vitest run --coverage",
-        "exports": "exports src/**/*.ts --exports --types",
-        "prepublishOnly": "npm run coverage && npm run exports"
+        "test:watch": "vitest",
+        "step:types": "tsc",
+        "step:build": "atomico-vite src/**/*.ts",
+        "step:exports": "exports lib/**/* types/**/* --main lit-html",
+        "step:test": "vitest run --coverage",
+        "prepublishOnly": "npm run step:test && npm run step:types && npm run step:build && npm run step:exports"
     },
     "peerDependencies": {
         "atomico": "*",
         "lit-html": "*"
     },
     "devDependencies": {
-        "@atomico/exports": "^0.37.0",
+        "@atomico/exports": "^1.2.1",
         "@atomico/tsconfig": "1.0.0",
-        "@atomico/vite": "^2.1.4",
+        "@atomico/vite": "^2.1.8",
         "@vitest/coverage-c8": "^0.24.1",
         "happy-dom": "^7.5.6",
         "typescript": "^4.7.3",
